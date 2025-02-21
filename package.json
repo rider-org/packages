@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
-  "scripts": {},
+  "scripts": {
+    "vitest": "echo Tests not defined yet",
+    "test": "pnpm run typecheck && pnpm run eslint && pnpm run prettier && pnpm run vitest",
+    "typecheck": "tsc --noEmit",
+    "eslint": "eslint .",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "eslint:fix": "eslint . --fix"
+  },
   "keywords": [],
   "dependencies": {
     "superjson": "^2.2.2"
