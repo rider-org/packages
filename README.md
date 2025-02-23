@@ -12,6 +12,12 @@ pnpm i rider-org/packages
 
 ### Update
 
+If you want a quick command to update all the packages that exist within Rider, you can run the following command in the root `rider` directory:
+
+```bash
+pnpm run update:all
+```
+
 If you need to receive an update for this package specifically, you can just run the same command again:
 
 ```bash
