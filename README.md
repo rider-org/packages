@@ -72,11 +72,9 @@ git commit -am "[1.3.0 -> 1.4.1] Updated Superjson export" -m "Add your descript
      ```ts
      import { s } from "@rider/packages/superjson";
 
-     const res = await apiFetch("/api/contact/v1/all");
+     const res = await fetch("/api/contact/v1/all");
 
-     const json = s.parse(await res.text()) as ApiDefault<{
-       contacts: Contact[];
-     }>;
+     const json = s.parse(await res.text()) as Contact[];
 
      console.log(json);
      ```
@@ -94,8 +92,6 @@ git commit -am "[1.3.0 -> 1.4.1] Updated Superjson export" -m "Add your descript
      const [parserError, parser] = await attempt(
        loginSchema.safeParseAsync(req.body),
      );
-
-     // console.log(req.body);
 
      if (parserError || !parser.success) {
        return;
