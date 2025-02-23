@@ -53,6 +53,12 @@ pnpm i rider-org/packages@latest
      "@rider/packages/prettier/index.js"
      ```
 
+   - If you are creating a new repository, please create a `.prettierignore` file in your root directory and copy the following into it:
+
+     ```.prettierignore
+     pnpm-lock.yaml*
+     ```
+
 3. Superjson:
 
    - Superjson is a requirement inside of the Rider ecosystem.
