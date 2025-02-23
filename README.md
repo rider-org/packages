@@ -25,3 +25,9 @@ You must follow the rules of semver to push changes to this repository. What doe
 If the change is a patch (e.g., bug fix or small improvement that does not affect the API): update the version like so - X.Y.Z → X.Y.(Z+1).
 If the change introduces new, backward-compatible functionality: update the version like so - X.Y.Z → X.(Y+1).0.
 If the change introduces backward-incompatible modifications (a breaking change): update the version like so - (X.Y.Z → (X+1).0.0).
+
+When you make commits, include the version update in the title like so:
+
+```bash
+git commit -am "[1.3.0 -> 1.4.1] Updated Superjson export" -m "Add your description here..."
+```
