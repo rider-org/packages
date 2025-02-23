@@ -14,5 +14,5 @@ export default tseslint.config(
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.ts"],
-  }
+  },
 );
