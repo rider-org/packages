@@ -16,9 +16,7 @@
   "dependencies": {
     "@rider/packages": "github:rider-org/packages",
     "eslint": "^9.21.0",
-    "superjson": "^2.2.2"
-  },
-  "devDependencies": {
+    "superjson": "^2.2.2",
     "@eslint/js": "^9.20.0",
     "eslint-plugin-perfectionist": "^4.9.0",
     "eslint-plugin-react-hooks": "^5.1.0",

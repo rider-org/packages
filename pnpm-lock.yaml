@@ -8,19 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@eslint/js':
+        specifier: ^9.20.0
+        version: 9.20.0
       '@rider/packages':
         specifier: github:rider-org/packages
         version: https://codeload.github.com/rider-org/packages/tar.gz/e573e1692cb2efc3162c58778728a2faa9877fc6
       eslint:
         specifier: ^9.21.0
         version: 9.21.0
-      superjson:
-        specifier: ^2.2.2
-        version: 2.2.2
-    devDependencies:
-      '@eslint/js':
-        specifier: ^9.20.0
-        version: 9.20.0
       eslint-plugin-perfectionist:
         specifier: ^4.9.0
         version: 4.9.0(eslint@9.21.0)(typescript@5.7.3)
@@ -36,6 +32,9 @@ importers:
       prettier:
         specifier: 3.5.2
         version: 3.5.2
+      superjson:
+        specifier: ^2.2.2
+        version: 2.2.2
       typescript-eslint:
         specifier: ^8.24.1
         version: 8.24.1(eslint@9.21.0)(typescript@5.7.3)
