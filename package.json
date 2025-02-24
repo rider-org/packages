@@ -14,15 +14,15 @@
   },
   "keywords": [],
   "dependencies": {
+    "@eslint/js": "^9.20.0",
     "@rider/packages": "github:rider-org/packages",
     "eslint": "^9.21.0",
-    "superjson": "^2.2.2",
-    "@eslint/js": "^9.20.0",
     "eslint-plugin-perfectionist": "^4.9.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "prettier": "3.5.2",
+    "superjson_": "npm:superjson@^2.2.2",
     "typescript-eslint": "^8.24.1"
   }
 }

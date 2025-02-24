@@ -1,5 +1,4 @@
-// @ts-expect-error - TS keeps complaining here. Might be a bug with their default export, but this works for now, so ignoring to pass tests.
-import sj from "superjson";
+import sj from "superjson_";
 
 /** JSON with superjson capabilities.
  * @example

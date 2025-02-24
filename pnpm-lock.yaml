@@ -13,7 +13,7 @@ importers:
         version: 9.20.0
       '@rider/packages':
         specifier: github:rider-org/packages
-        version: https://codeload.github.com/rider-org/packages/tar.gz/e573e1692cb2efc3162c58778728a2faa9877fc6
+        version: https://codeload.github.com/rider-org/packages/tar.gz/6d6470df0c0cfec41c06f3b212f062fd9c198721(typescript@5.7.3)
       eslint:
         specifier: ^9.21.0
         version: 9.21.0
@@ -32,9 +32,9 @@ importers:
       prettier:
         specifier: 3.5.2
         version: 3.5.2
-      superjson:
-        specifier: ^2.2.2
-        version: 2.2.2
+      superjson_:
+        specifier: npm:superjson@^2.2.2
+        version: superjson@2.2.2
       typescript-eslint:
         specifier: ^8.24.1
         version: 8.24.1(eslint@9.21.0)(typescript@5.7.3)
@@ -111,8 +111,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@rider/packages@https://codeload.github.com/rider-org/packages/tar.gz/e573e1692cb2efc3162c58778728a2faa9877fc6':
-    resolution: {tarball: https://codeload.github.com/rider-org/packages/tar.gz/e573e1692cb2efc3162c58778728a2faa9877fc6}
+  '@rider/packages@https://codeload.github.com/rider-org/packages/tar.gz/6d6470df0c0cfec41c06f3b212f062fd9c198721':
+    resolution: {tarball: https://codeload.github.com/rider-org/packages/tar.gz/6d6470df0c0cfec41c06f3b212f062fd9c198721}
     version: 1.0.0
 
   '@types/estree@1.0.6':
@@ -636,13 +636,21 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.0
 
-  '@rider/packages@https://codeload.github.com/rider-org/packages/tar.gz/e573e1692cb2efc3162c58778728a2faa9877fc6':
+  '@rider/packages@https://codeload.github.com/rider-org/packages/tar.gz/6d6470df0c0cfec41c06f3b212f062fd9c198721(typescript@5.7.3)':
     dependencies:
+      '@eslint/js': 9.20.0
       eslint: 9.21.0
+      eslint-plugin-perfectionist: 4.9.0(eslint@9.21.0)(typescript@5.7.3)
+      eslint-plugin-react-hooks: 5.1.0(eslint@9.21.0)
+      eslint-plugin-react-refresh: 0.4.19(eslint@9.21.0)
+      globals: 16.0.0
+      prettier: 3.5.2
       superjson: 2.2.2
+      typescript-eslint: 8.24.1(eslint@9.21.0)(typescript@5.7.3)
     transitivePeerDependencies:
       - jiti
       - supports-color
+      - typescript
 
   '@types/estree@1.0.6': {}
 
