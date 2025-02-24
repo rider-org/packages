@@ -11,9 +11,6 @@ importers:
       '@eslint/js':
         specifier: ^9.20.0
         version: 9.20.0
-      '@rider/packages':
-        specifier: github:rider-org/packages
-        version: https://codeload.github.com/rider-org/packages/tar.gz/79f699adc8dc9f9b7360fa81442a07fad1266318(typescript@5.7.3)
       eslint:
         specifier: ^9.21.0
         version: 9.21.0
@@ -110,10 +107,6 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
-
-  '@rider/packages@https://codeload.github.com/rider-org/packages/tar.gz/79f699adc8dc9f9b7360fa81442a07fad1266318':
-    resolution: {tarball: https://codeload.github.com/rider-org/packages/tar.gz/79f699adc8dc9f9b7360fa81442a07fad1266318}
-    version: 1.0.0
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -635,22 +628,6 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.0
-
-  '@rider/packages@https://codeload.github.com/rider-org/packages/tar.gz/79f699adc8dc9f9b7360fa81442a07fad1266318(typescript@5.7.3)':
-    dependencies:
-      '@eslint/js': 9.20.0
-      eslint: 9.21.0
-      eslint-plugin-perfectionist: 4.9.0(eslint@9.21.0)(typescript@5.7.3)
-      eslint-plugin-react-hooks: 5.1.0(eslint@9.21.0)
-      eslint-plugin-react-refresh: 0.4.19(eslint@9.21.0)
-      globals: 16.0.0
-      prettier: 3.5.2
-      superjson_: superjson@2.2.2
-      typescript-eslint: 8.24.1(eslint@9.21.0)(typescript@5.7.3)
-    transitivePeerDependencies:
-      - jiti
-      - supports-color
-      - typescript
 
   '@types/estree@1.0.6': {}
 
