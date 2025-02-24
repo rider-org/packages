@@ -23,5 +23,3 @@ export const s = {
     return sj.parse<T>(data);
   },
 };
-
-export const hi: any = "5";
