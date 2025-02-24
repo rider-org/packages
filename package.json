@@ -14,6 +14,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "@rider/packages": "github:rider-org/packages",
     "eslint": "^9.21.0",
     "superjson": "^2.2.2"
   },

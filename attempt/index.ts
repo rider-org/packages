@@ -12,7 +12,7 @@
  * ```
  */
 export async function attempt<T>(
-  promise: Promise<T>
+  promise: Promise<T>,
 ): Promise<[undefined, T] | [Error]> {
   return promise
     .then((data) => {
