@@ -1,4 +1,5 @@
 import js from "@eslint/js";
+import stylisticJs from "@stylistic/eslint-plugin-js";
 import perfectionist from "eslint-plugin-perfectionist";
 import tseslint from "typescript-eslint";
 
@@ -9,11 +10,24 @@ export default tseslint.config(
     },
     rules: {
       "perfectionist/sort-imports": "error",
-      "@typescript-eslint/consistent-type-imports": "error"
     },
   },
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    extends: [
+      js.configs.recommended,
+      ...tseslint.configs.recommended,
+      stylisticJs.rules,
+    ],
+    rules: {
+      "consistent-type-imports": "error",
+      "max-len": [
+        "error",
+        {
+          code: 150,
+          comments: 100,
+        },
+      ],
+    },
     files: ["**/*.ts"],
   },
 );

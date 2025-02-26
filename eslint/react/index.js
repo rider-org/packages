@@ -1,4 +1,5 @@
 import js from "@eslint/js";
+import stylisticJs from "@stylistic/eslint-plugin-js";
 import perfectionist from "eslint-plugin-perfectionist";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
@@ -12,12 +13,16 @@ export default tseslint.config(
     },
     rules: {
       "perfectionist/sort-imports": "error",
-      "@typescript-eslint/consistent-type-imports": "error"
+      "@typescript-eslint/consistent-type-imports": "error",
     },
   },
   { ignores: ["dist"] },
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    extends: [
+      js.configs.recommended,
+      ...tseslint.configs.recommended,
+      stylisticJs.rules,
+    ],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
@@ -32,6 +37,14 @@ export default tseslint.config(
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
+      ],
+      "consistent-type-imports": "error",
+      "max-len": [
+        "error",
+        {
+          code: 150,
+          comments: 100,
+        },
       ],
     },
   },
