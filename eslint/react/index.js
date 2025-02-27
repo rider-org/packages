@@ -36,7 +36,7 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
-      "consistent-type-imports": "error",
+      "@typescript-eslint/consistent-type-imports": "error",
       "@stylistic/js/max-len": [
         "error",
         {
