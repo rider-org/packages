@@ -18,9 +18,6 @@ export default tseslint.config(
   { ignores: ["dist"] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
-    plugins: {
-      "@stylistic/js": stylisticJs,
-    },
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
@@ -29,6 +26,7 @@ export default tseslint.config(
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
+      "@stylistic/js": stylisticJs,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
