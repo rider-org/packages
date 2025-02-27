@@ -13,7 +13,6 @@ export default tseslint.config(
     },
     rules: {
       "perfectionist/sort-imports": "error",
-      "@typescript-eslint/consistent-type-imports": "error",
     },
   },
   { ignores: ["dist"] },
