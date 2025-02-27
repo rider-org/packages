@@ -17,11 +17,10 @@ export default tseslint.config(
   },
   { ignores: ["dist"] },
   {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-      stylisticJs.rules,
-    ],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    plugins: {
+      "@stylistic/js": stylisticJs,
+    },
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
@@ -38,7 +37,7 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
       "consistent-type-imports": "error",
-      "max-len": [
+      "@stylistic/js/max-len": [
         "error",
         {
           code: 150,

@@ -13,14 +13,13 @@ export default tseslint.config(
     },
   },
   {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-      stylisticJs.rules,
-    ],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    plugins: {
+      "@stylistic/js": stylisticJs,
+    },
     rules: {
       "consistent-type-imports": "error",
-      "max-len": [
+      "@stylistic/js/max-len": [
         "error",
         {
           code: 150,
